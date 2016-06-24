@@ -1,0 +1,50 @@
+@import "~variables.less";
+
+.uploader-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, .5);
+	.adjust-wraper{
+	}
+	.icon-close{
+		position: fixed;
+		background-color: #fff;
+		right: .3rem;
+		top: .3rem;
+		border: 1px solid @border-color;
+	}
+}
+
+.dropzone{
+	background-color: #fff;
+	height: 5rem;
+	border: 1px dashed #000;
+	width: 100%;
+	box-sizing: border-box;
+}
+.dropzone-active{
+	border: 1px dashed green;
+}
+.preview{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	> .preview-img{
+		flex-basis: 50%;
+		img{
+			max-width: 50%;
+		}
+	}
+}
+.btn-upload{
+	background-color: green;
+	line-height: .6rem;
+	height: .6rem;
+	text-align: center;
+	width: 1rem;
+	color: #fff;
+	border-radius: .1rem;
+}

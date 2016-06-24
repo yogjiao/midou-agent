@@ -1,0 +1,53 @@
+@import "~variables.less";
+.agent-search-container{
+	max-width: @max-width;
+	margin: 0 auto;
+	padding-top: 3rem;
+}
+
+.logo-wrap{
+	height: 1rem;
+	background-image: url("@{base-static-dir}/logo.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+	margin-bottom: 1rem;
+}
+.search-wraper{
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+
+	border-radius: .08rem;
+	margin: 0 .5rem;
+	border: 1px solid @font-color-light;
+	overflow: hidden;
+	>*{
+		height: .6rem;
+		line-height: .6rem;
+	}
+	input{
+		display: block;
+		border: none;
+		flex: 0 0 85%;
+		width: 100%;
+		text-indent: .3rem;
+	}
+	.btn-search{
+		flex: 0 0 16%;
+		background-color: @purple;
+		color: #fff;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 .3rem;
+	}
+}
+.prompt-format{
+	text-align: center;
+	p{
+		color: @purple;
+		padding-top: .3rem;
+	}
+}
